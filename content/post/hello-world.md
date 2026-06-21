@@ -5,6 +5,7 @@ tags: ['博客']
 ---
 
 用 Hugo + GitHub Pages 搭了一个个人博客，记录一下过程。
+全程由ClaudeCode + deepseekV4 flash 搭建。
 
 ### 选型
 
