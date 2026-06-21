@@ -2,8 +2,10 @@ baseURL = 'https://yingkuanwang.github.io/'
 languageCode = 'zh-CN'
 title = '王英宽'
 theme = 'PaperMod'
+defaultContentLanguage = 'zh'
 
-paginate = 10
+[pagination]
+  pagerSize = 10
 enableInlineShortcodes = true
 enableRobotsTXT = true
 
