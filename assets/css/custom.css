@@ -1,220 +1,23 @@
-/* ============ 自定义视觉增强 ============ */
-
-/* 主色调 */
-:root {
-  --card-radius: 16px;
-  --card-shadow: 0 4px 20px rgba(0,0,0,.06);
-  --card-shadow-hover: 0 8px 30px rgba(0,0,0,.12);
-  --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --section-gap: 24px;
-}
-
-/* 圆角 & 柔和阴影 */
-.main {
-  padding-top: 20px;
-}
-
+/* 卡片圆角 */
 .post-entry {
-  border-radius: var(--card-radius) !important;
-  box-shadow: var(--card-shadow) !important;
-  border: 1px solid rgba(0,0,0,.04) !important;
-  transition: transform .2s ease, box-shadow .2s ease !important;
-  overflow: hidden;
+  border-radius: 12px !important;
+  transition: transform .15s ease, box-shadow .15s ease !important;
 }
 
 .post-entry:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--card-shadow-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.1) !important;
 }
 
-/* 文章列表封面圆角 */
-.entry-cover img {
-  border-radius: var(--card-radius) var(--card-radius) 0 0 !important;
-}
-
-/* 首页个人简介区域 */
+/* 首页简单装饰 */
 .first-entry {
-  background: var(--accent-gradient);
-  border: none !important;
-  border-radius: var(--card-radius) !important;
-  padding: 40px 36px !important;
-  min-height: unset !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.first-entry::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -30%;
-  width: 500px;
-  height: 500px;
-  background: rgba(255,255,255,.05);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.first-entry::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 300px;
-  height: 300px;
-  background: rgba(255,255,255,.05);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.first-entry .entry-header h1 {
-  color: #fff !important;
-  font-size: 2.2em !important;
-}
-
-.first-entry .entry-content {
-  color: rgba(255,255,255,.9) !important;
-  font-size: 1em !important;
-  line-height: 1.8 !important;
-}
-
-.first-entry .entry-content p {
-  margin: 12px 0 !important;
-}
-
-.first-entry .entry-content strong {
-  color: #fff;
-  background: rgba(255,255,255,.15);
-  padding: 1px 8px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-/* 导航栏美化 */
-.nav {
-  border-bottom: 1px solid rgba(0,0,0,.06) !important;
-  backdrop-filter: blur(12px);
-  background: rgba(255,255,255,.85) !important;
-}
-
-[data-theme="dark"] .nav {
-  background: rgba(0,0,0,.85) !important;
-  border-bottom-color: rgba(255,255,255,.06) !important;
-}
-
-/* 标签 & 分类徽章 */
-.entry-tags .tag,
-.post-tags .tag {
-  border-radius: 20px !important;
-  padding: 2px 14px !important;
-  font-size: .82em !important;
-  background: #f0f0f0 !important;
-  border: none !important;
-  transition: background .15s;
-}
-
-.entry-tags .tag:hover,
-.post-tags .tag:hover {
-  background: var(--accent-gradient) !important;
-  color: #fff !important;
-}
-
-/* 目录美化 */
-.toc {
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,.06);
-  background: rgba(0,0,0,.02);
-  padding: 12px 16px;
-}
-
-.toc a:hover {
-  color: #667eea !important;
-}
-
-/* 按钮统一样式 */
-button,
-.share-buttons a,
-#menu a {
-  transition: all .15s ease;
-}
-
-/* 文章内容排版微调 */
-.post-content h2 {
-  margin-top: 2em;
-  padding-bottom: 8px;
-  border-bottom: 2px solid rgba(102,126,234,.2);
-}
-
-.post-content h3 {
-  margin-top: 1.6em;
-}
-
-.post-content code {
-  border-radius: 6px;
-  font-size: .9em;
-}
-
-.post-content pre {
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,.08);
-}
-
-.post-content blockquote {
-  border-left: 4px solid #667eea;
-  background: rgba(102,126,234,.06);
-  border-radius: 0 8px 8px 0;
-  padding: 12px 20px;
-}
-
-/* 文章阅读时间小标 */
-.post-meta .reading-time::before {
-  content: '☕ ';
-}
-
-/* 分页美化 */
-.pagination a {
-  border-radius: 10px !important;
-  border: 1px solid rgba(0,0,0,.08) !important;
-  transition: all .15s ease;
-}
-
-.pagination a:hover {
-  background: var(--accent-gradient) !important;
-  color: #fff !important;
-  border-color: transparent !important;
-}
-
-/* 页脚 */
-.footer {
-  border-top: 1px solid rgba(0,0,0,.05) !important;
-  padding-top: 20px !important;
-  margin-top: 40px !important;
-}
-
-/* 暗色模式适配 */
-[data-theme="dark"] .post-entry {
-  border-color: rgba(255,255,255,.06) !important;
-}
-
-[data-theme="dark"] .entry-tags .tag {
-  background: rgba(255,255,255,.1) !important;
-  color: #ccc !important;
-}
-
-[data-theme="dark"] .toc {
-  background: rgba(255,255,255,.03);
-  border-color: rgba(255,255,255,.06);
-}
-
-[data-theme="dark"] .post-content blockquote {
-  background: rgba(102,126,234,.1);
-}
-
-[data-theme="dark"] .pagination a {
-  border-color: rgba(255,255,255,.1) !important;
-}
-
-/* 搜索页 */
-.search-entry {
   border-radius: 12px !important;
+  padding: 32px !important;
+}
+
+/* 标签样式 */
+.entry-tags .tag {
+  border-radius: 16px !important;
+  padding: 2px 12px !important;
+  font-size: .82em !important;
 }

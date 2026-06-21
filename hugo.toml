@@ -12,34 +12,25 @@ enableEmoji = true
   pagerSize = 10
 
 [params]
-  description = '王盈宽的个人博客 — 编程 · 技术 · 生活'
+  description = '王盈宽的博客'
   author = '王盈宽'
   DateFormat = '2006-01-02'
   defaultTheme = 'light'
-  disableThemeToggle = false
   ShowReadingTime = true
-  ShowShareButtons = true
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowToc = true
-  comments = true
+  ShowWordCount = false
+  ShowToc = false
+  comments = false
   customCSS = ['css/custom.css']
 
 [params.homeInfoParams]
   Title = '你好，我是王盈宽 👋'
-  Content = '热爱编程与技术创作。这个博客记录我的学习笔记、项目经验与生活思考。\n\n**技能** · Go · Python · JavaScript · Rust · Docker\n**兴趣** · 后端开发 · 开源 · 系统设计 · 效率工具'
+  Content = '记录技术学习和生活思考。'
 
 [[params.socialIcons]]
   name = 'github'
   url = 'https://github.com/yingkuanwang'
-
-[params.cover]
-  linkFullImages = true
-  responsiveImages = true
-  hidden = false
-  hiddenInList = false
 
 [params.assets]
   disableHLJS = true
@@ -47,7 +38,6 @@ enableEmoji = true
   disableFingerprinting = true
 
 [taxonomies]
-  category = 'categories'
   tag = 'tags'
 
 [languages.zh]
@@ -59,36 +49,12 @@ enableEmoji = true
 
 [[languages.zh.menu.main]]
   identifier = 'post'
-  name = '📝 文章'
+  name = '文章'
   url = '/post'
   weight = 1
 
 [[languages.zh.menu.main]]
-  identifier = 'categories'
-  name = '📂 分类'
-  url = '/categories'
-  weight = 2
-
-[[languages.zh.menu.main]]
-  identifier = 'tags'
-  name = '🏷️ 标签'
-  url = '/tags'
-  weight = 3
-
-[[languages.zh.menu.main]]
-  identifier = 'archives'
-  name = '📦 归档'
-  url = '/archives'
-  weight = 4
-
-[[languages.zh.menu.main]]
-  identifier = 'search'
-  name = '🔍 搜索'
-  url = '/search'
-  weight = 5
-
-[[languages.zh.menu.main]]
   identifier = 'about'
-  name = '💬 关于'
+  name = '关于'
   url = '/about'
-  weight = 6
+  weight = 2
