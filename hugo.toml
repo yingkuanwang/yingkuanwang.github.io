@@ -8,6 +8,10 @@ enableInlineShortcodes = true
 enableRobotsTXT = true
 enableEmoji = true
 
+# 搜索需要的 JSON 输出
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [pagination]
   pagerSize = 10
 
@@ -54,7 +58,13 @@ enableEmoji = true
   weight = 1
 
 [[languages.zh.menu.main]]
+  identifier = 'search'
+  name = '搜索'
+  url = '/search'
+  weight = 2
+
+[[languages.zh.menu.main]]
   identifier = 'about'
   name = '关于'
   url = '/about'
-  weight = 2
+  weight = 3
