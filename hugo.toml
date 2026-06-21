@@ -1,0 +1,58 @@
+baseURL = 'https://yingkuanwang.github.io/'
+languageCode = 'zh-CN'
+title = '王英宽'
+theme = 'PaperMod'
+
+paginate = 10
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+[params]
+  description = '个人博客'
+  author = '王英宽'
+  DateFormat = '2006-01-02'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  comments = false
+  images = ['img/avatar.webp']
+
+  homeInfoParams = { Title = '你好 👋', Content = '欢迎来到我的博客' }
+  socialIcons = [
+    { name = 'github', url = 'https://github.com/yingkuanwang' }
+  ]
+
+  assets = { disableHLJS = true }
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[languages.zh]
+  languageName = '中文'
+  weight = 1
+
+  [languages.zh.params]
+    profileMode = { enabled = false }
+
+  [languages.zh.menu]
+    [[languages.zh.menu.main]]
+      identifier = 'archives'
+      name = '归档'
+      url = '/archives'
+      weight = 2
+    [[languages.zh.menu.main]]
+      identifier = 'search'
+      name = '搜索'
+      url = '/search'
+      weight = 3
+    [[languages.zh.menu.main]]
+      identifier = 'about'
+      name = '关于'
+      url = '/about'
+      weight = 4
