@@ -1,19 +1,21 @@
 baseURL = 'https://yingkuanwang.github.io/'
 languageCode = 'zh-CN'
-title = '王英宽'
+title = '王盈宽'
 theme = 'PaperMod'
 defaultContentLanguage = 'zh'
 
-[pagination]
-  pagerSize = 10
 enableInlineShortcodes = true
 enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
 
 [params]
-  description = '个人博客'
-  author = '王英宽'
+  description = '王盈宽的个人博客 — 编程 · 技术 · 生活'
+  author = '王盈宽'
   DateFormat = '2006-01-02'
-  defaultTheme = 'auto'
+  defaultTheme = 'light'
   disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = true
@@ -21,15 +23,28 @@ enableRobotsTXT = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowWordCount = true
-  comments = false
-  images = ['img/avatar.webp']
+  ShowToc = true
+  comments = true
+  customCSS = ['css/custom.css']
 
-  homeInfoParams = { Title = '你好 👋', Content = '欢迎来到我的博客' }
-  socialIcons = [
-    { name = 'github', url = 'https://github.com/yingkuanwang' }
-  ]
+[params.homeInfoParams]
+  Title = '你好，我是王盈宽 👋'
+  Content = '热爱编程与技术创作。这个博客记录我的学习笔记、项目经验与生活思考。\n\n**技能** · Go · Python · JavaScript · Rust · Docker\n**兴趣** · 后端开发 · 开源 · 系统设计 · 效率工具'
 
-  assets = { disableHLJS = true }
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/yingkuanwang'
+
+[params.cover]
+  linkFullImages = true
+  responsiveImages = true
+  hidden = false
+  hiddenInList = false
+
+[params.assets]
+  disableHLJS = true
+  disableScrollBarTheme = false
+  disableFingerprinting = true
 
 [taxonomies]
   category = 'categories'
@@ -39,22 +54,41 @@ enableRobotsTXT = true
   languageName = '中文'
   weight = 1
 
-  [languages.zh.params]
-    profileMode = { enabled = false }
+[languages.zh.params]
+  profileMode = { enabled = false }
 
-  [languages.zh.menu]
-    [[languages.zh.menu.main]]
-      identifier = 'archives'
-      name = '归档'
-      url = '/archives'
-      weight = 2
-    [[languages.zh.menu.main]]
-      identifier = 'search'
-      name = '搜索'
-      url = '/search'
-      weight = 3
-    [[languages.zh.menu.main]]
-      identifier = 'about'
-      name = '关于'
-      url = '/about'
-      weight = 4
+[[languages.zh.menu.main]]
+  identifier = 'post'
+  name = '📝 文章'
+  url = '/post'
+  weight = 1
+
+[[languages.zh.menu.main]]
+  identifier = 'categories'
+  name = '📂 分类'
+  url = '/categories'
+  weight = 2
+
+[[languages.zh.menu.main]]
+  identifier = 'tags'
+  name = '🏷️ 标签'
+  url = '/tags'
+  weight = 3
+
+[[languages.zh.menu.main]]
+  identifier = 'archives'
+  name = '📦 归档'
+  url = '/archives'
+  weight = 4
+
+[[languages.zh.menu.main]]
+  identifier = 'search'
+  name = '🔍 搜索'
+  url = '/search'
+  weight = 5
+
+[[languages.zh.menu.main]]
+  identifier = 'about'
+  name = '💬 关于'
+  url = '/about'
+  weight = 6

@@ -1,21 +1,38 @@
 ---
 title: '我的第一篇博客'
 date: 2026-06-21
-description: '用 Hugo + GitHub Pages 搭好了博客，记录一下过程'
-tags: ['博客', 'Hugo']
-categories: ['技术']
+description: '博客正式上线 🎉 记录一下搭建过程和为什么决定开始写博客'
+tags: ['博客', '生活']
+categories: ['生活']
+cover:
+  image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800'
+  caption: 'Photo by Unsplash'
 ---
 
-## 博客搭好了 🎉
+## 🎉 开张了
 
-用 **Hugo** 静态站点生成器 + **PaperMod** 主题 + **GitHub Pages** 免费托管，零成本拥有了一个个人博客。
+终于把个人博客搭起来了。
 
-### 步骤回顾
+## 为什么写博客
 
-1. 在 GitHub 上创建 `yingkuanwang.github.io` 仓库
-2. 本地用 Hugo 生成站点
-3. 选 PaperMod 主题
-4. 配置域名和主题参数
-5. 推送代码，GitHub Actions 自动部署
+写博客的动机其实很简单：**输出倒逼输入**。
 
-以后就在这里写东西了。
+很多时候我们觉得学会了，但真要讲清楚、写明白，才发现理解还不够深。写作是最好的学习方式之一。
+
+## 博客搭建方案
+
+| 项目 | 选择 | 理由 |
+|------|------|------|
+| 站点生成器 | Hugo | 快，Go 语言写的，一个二进制搞定 |
+| 主题 | PaperMod | 简洁、优雅、功能完整 |
+| 托管 | GitHub Pages | 免费、稳定、自动部署 |
+| 域名 | 暂无 | `yingkuanwang.github.io` 先用着 |
+
+## 以后写什么
+
+- 技术笔记与教程
+- 项目经验总结
+- 工具推荐与效率心得
+- 偶尔的生活随想
+
+希望这个博客能陪我一起成长 🚀
